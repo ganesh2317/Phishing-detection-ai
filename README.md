@@ -1,4 +1,5 @@
 🛡️ AI-Based Phishing Detection System
+
 📌 Overview
 
 The AI-Based Phishing Detection System is a cybersecurity application that detects phishing emails, SMS messages, and URLs using Natural Language Processing (NLP) and Machine Learning techniques. The system classifies inputs as phishing or legitimate and provides confidence scores and explanations.
@@ -76,3 +77,108 @@ Real-world phishing detection system
 👨‍💻 Author
 
 Ganesh Mahalatkar
+
+
+📌 Overview
+
+
+
+The AI-Based Phishing Detection System is a cybersecurity application that detects phishing emails, SMS messages, and URLs using Natural Language Processing (NLP) and Machine Learning techniques. The system classifies inputs as phishing or legitimate and provides confidence scores and explanations.
+
+
+
+This project is designed as a modular, scalable, and production-ready AI solution suitable for real-world cybersecurity and academic use.
+
+
+
+🚀 Features
+
+
+
+Detect phishing in emails, SMS, and URLs
+
+
+
+NLP-based machine learning models
+
+
+
+FastAPI backend with REST APIs
+
+
+
+Confidence scores and explainable predictions
+
+
+
+Cybersecurity chatbot
+
+
+
+Frontend interface (HTML, CSS, JS)
+
+
+
+Docker-based deployment
+
+
+
+🏗️ Tech Stack
+
+
+
+Backend: Python, FastAPI
+
+
+
+Machine Learning: NLP, Scikit-learn, BERT
+
+
+
+Frontend: HTML, CSS, JavaScript
+
+
+
+Tools: Git, GitHub, Docker
+
+
+
+▶️ How to Run
+
+Start Backend
+
+cd backend/app
+
+uvicorn main:app --reload
+
+
+
+Open API Docs
+
+http://127.0.0.1:8000/docs
+
+
+
+Run Frontend
+
+cd frontend
+
+python -m http.server 5500
+
+
+
+🎯 Objective
+
+
+
+To build an AI system that identifies phishing attempts and helps users stay safe from online fraud.
+
+
+
+👨‍💻 Author
+
+
+
+Ganesh Mahalatkar
+
+
