@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+nltk
+transformers
+torch
+shap
+python-multipart
+requests
+beautifulsoup4
+pytest

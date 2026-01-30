@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard - AI Phishing Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>PhishGuard</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" onclick="showSection('dashboard')">Dashboard</li>
+                    <li onclick="showSection('email-scan')">Email/SMS Scanner</li>
+                    <li onclick="showSection('url-scan')">URL Scanner</li>
+                    <li onclick="showSection('chatbot')">Cyber Assistant</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="section">
+                <h1>Dashboard</h1>
+                <div class="stats-grid">
+                    <div class="card stat-card">
+                        <h3>Scans Today</h3>
+                        <p class="stat-num">1,245</p>
+                    </div>
+                    <div class="card stat-card">
+                        <h3>Phishing Detected</h3>
+                        <p class="stat-num error">123</p>
+                    </div>
+                    <div class="card stat-card">
+                        <h3>System Status</h3>
+                        <p class="stat-num success">Active</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Email Scanner Section -->
+            <section id="email-scan" class="section hidden">
+                <h1>Email & SMS Scanner</h1>
+                <div class="card input-card">
+                    <textarea id="emailInput" placeholder="Paste the email or SMS content here..."></textarea>
+                    <button class="btn-primary" onclick="scanEmail()">Scan Text</button>
+                </div>
+                <div id="emailResult" class="result-card hidden">
+                    <h3>Result: <span id="emailPrediction"></span></h3>
+                    <p>Confidence: <span id="emailConfidence"></span>%</p>
+                    <div class="explanation-box">
+                        <h4>AI Explanation:</h4>
+                        <p id="emailExplanation"></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- URL Scanner Section -->
+            <section id="url-scan" class="section hidden">
+                <h1>URL Scanner</h1>
+                <div class="card input-card">
+                    <input type="text" id="urlInput" placeholder="Enter website URL (e.g., http://example.com)">
+                    <button class="btn-primary" onclick="scanUrl()">Scan URL</button>
+                </div>
+                <div id="urlResult" class="result-card hidden">
+                    <h3>Result: <span id="urlPrediction"></span></h3>
+                    <p>Confidence: <span id="urlConfidence"></span>%</p>
+                </div>
+            </section>
+
+            <!-- Chatbot Section -->
+            <section id="chatbot" class="section hidden">
+                <h1>Cybersecurity Assistant</h1>
+                <div class="chat-container card">
+                    <div id="chatHistory" class="chat-history">
+                        <div class="msg bot-msg">Hello! I'm your cybersecurity assistant. How can I help you stay safe?</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInput" placeholder="Ask a question...">
+                        <button class="btn-secondary" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
